@@ -1,0 +1,44 @@
+{
+  "name": "hejhome-api",
+  "version": "1.0.0",
+  "description": "HejHome api library for Node.js & TypeScript",
+  "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    "import": "./dist/esm/index.js",
+    "require": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsup --watch",
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest"
+  },
+  "keywords": [
+    "hejhome",
+    "api",
+    "home automation",
+    "goqual",
+    "typescript"
+  ],
+  "author": "Donghun Ohn",
+  "license": "MIT",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "devDependencies": {
+    "@babel/preset-typescript": "^7.27.1",
+    "@jest/globals": "^30.0.0",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^24.0.1",
+    "dotenv": "^16.5.0",
+    "ts-jest": "^29.4.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "jest": "^30.0.0",
+    "node-fetch": "^3.3.2"
+  }
+}
